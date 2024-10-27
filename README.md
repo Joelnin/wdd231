@@ -1,2 +1,2 @@
 # wdd231
-Repository for WDD231 subject
+This repository is for WDD231.
