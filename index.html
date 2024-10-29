@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>WDD 231 - Web Frontend Development I - Joelnin Rodriguez</title>
+    <meta name="description" content="Information about Joelnin Rodriguez and her Web and Computer Programming Certificate progress.">
+    <meta name="author" content="Joelnin Rodriguez">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/base-large.css">
+    <link rel="icon" href="images/pen.ico" type="image/x-icon">
+    <script defer src="scripts/base.js"></script>
+</head>
+<body>
+    <header>
+        <div class="profile">
+            <img src="images/profile.webp" alt="Joelnin Rodriguez">
+            <h1>Joelnin Rodriguez</h1>
+        </div>
+        
+        <div>
+            <button type="button" id="menu" aria-label="Menu button"> </button>
+            <nav>
+                <ul class="navigation">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">Chamber</a></li>
+                    <li><a href="https://github.com/Joelnin">GitHub Profile</a></li>
+                    <li><a href="https://www.linkedin.com/in/joelnin-rodriguez">LinkedIn</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        <section class="work">
+            <h2>Course Work</h2>
+            <ul>
+                <li>*</li>
+                <li>*</li>
+                <li>*</li>
+            </ul>
+
+        </section>
+
+        <section class="country">
+            <h2>Sucre, Venezuela</h2>
+            <figure class="beach">
+                <img src="images/araya.webp" alt="El Castillo Beach, Sucre, Venezuela" loading="lazy">
+                <figcaption>El Castillo Beach, Sucre, Venezuela</figcaption>
+            </figure>
+        </section>
+
+        <section class="certificate">
+            <h2>Web and Computer Programming Certificate</h2>
+            <div class="filters">
+                <ul id="filters">
+                    <li id="filter-all">All</li>
+                    <li id="filter-cse">CSE</li>
+                    <li id="filter-wdd">WDD</li>
+                </ul>    
+            </div>
+
+            <div class="subjects">
+                <ul id="subjects">
+                </ul>
+                <div>
+                    <ul class="explanation">
+                        <li class="completed">Completed</li>
+                        <li>Not Completed</li>
+                    </ul>
+                </div>
+            </div>
+            <h3>Total Credits Required: <span id="credits">0</span> </h3>
+        </section>
+
+    </main>
+    <footer>
+        <p>
+            ©<span id="currentyear"></span> | Joelnin Rodriguez | Venezuela
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
