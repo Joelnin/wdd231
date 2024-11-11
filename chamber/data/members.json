@@ -1,0 +1,60 @@
+{
+    "members": [
+        {
+            "name": "Fresh Fish",
+            "address": "Cumaná, El Bosque Urbanization",
+            "phone": "412-8639641",
+            "url": "https://www.collinsdictionary.com/es/diccionario/ingles-espanol/fisherman",
+            "logofile": "commercelogo1.webp",
+            "level": 2
+        },
+        {
+            "name": "Innovadesing 3D",
+            "address": "Cumaná, La Cruz Street",
+            "phone": "412-0858667",
+            "url": "https://www.instagram.com/innovadesing3d?igsh=N2d2NHAxOHlwM2k2",
+            "logofile": "commercelogo2.webp",
+            "level": 1
+        },
+        {
+            "name": "Café Gourmet Cumaná",
+            "address": "Cumaná, Gutiérrez Street",
+            "phone": "426-6208964",
+            "url": "https://www.instagram.com/cafegourmetcumanaoficial?igsh=c3k0cHo2MjA4NzJ6",
+            "logofile": "commercelogo3.webp",
+            "level": 1
+        },
+        {
+            "name": "Nina's Cupcakes and Cakes",
+            "address": "Cumaná, Tres Picos Urbanization",
+            "phone": "414-9994608",
+            "url": "https://www.instagram.com/ninas_marval?igsh=MTFsY2xmZnlsYTJzNw==",
+            "logofile": "commercelogo4.webp",
+            "level": 2
+        },
+        {
+            "name": "Dulcemente GICA",
+            "address": "Cumaná, Petión Street",
+            "phone": "412-6949649",
+            "url": "https://www.instagram.com/dulcementegica?igsh=dW81dXAya3dyNGN4",
+            "logofile": "commercelogo5.webp",
+            "level": 3
+        },
+        {
+            "name": "Ache Barber",
+            "address": "Home Delivery",
+            "phone": "424-8720650",
+            "url": "https://www.instagram.com/achebarbermusic?igsh=MTF5aXo4Y3F1NGZraA==",
+            "logofile": "commercelogo6.webp",
+            "level": 1
+        },
+        {
+            "name": "A de Arte",
+            "address": "Home Delivery",
+            "phone": "424-8814288",
+            "url": "https://www.instagram.com/ade.arte_?igsh=ZTNzcjJsajRnOGlh",
+            "logofile": "commercelogo7.webp",
+            "level": 3
+        }
+    ]
+}
