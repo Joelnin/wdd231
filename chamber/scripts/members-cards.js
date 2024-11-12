@@ -6,7 +6,7 @@ async function getMembersData() {
     try {
         const response = await fetch(url);
         const data = await response.json();
-        // console.table(data.members); // temporary testing of data response
+        console.table(data.members); // temporary testing of data response
         displayMembers(data.members);
     
     } catch (error) {
@@ -64,7 +64,6 @@ const displayMembers = (members) => {
         commerceLogo.setAttribute('loading', 'lazy');
         commerceLogo.setAttribute('width', '300');
         commerceLogo.setAttribute('height', '200');
-
 
         div1.appendChild(commerceLogo);
         div1.appendChild(commerceName);

@@ -3,14 +3,15 @@
     --secondary-color: rgb(0, 0, 0);
 
     --accent1-color:rgb(191, 200, 244);
-    --accent2-color: rgba(158, 221, 174, 1);
+    --accent2-color: rgb(158, 221, 174);
 
     --nav-background-color: rgb(10, 11, 100);
+    --nav-background-color-hover: rgb(121, 187, 137);
 
     --paragraph-font: 'Roboto', serif;
 
     --min-width: 350px;
-    --max-width: 1080px;
+    --max-width: 1200px;
 }
 
 * {
@@ -41,7 +42,8 @@ footer {
     text-shadow:  1px 1px 2px var(--primary-color);
 }
 
-.header-top > img, main {
+.header-top > img, 
+main {
     width: 100%;
     height: auto;
 }
@@ -110,6 +112,11 @@ ul.menu-links li a {
 ul.menu-links li.active-link a {
     background-color: var(--accent2-color);
     color: var(--secondary-color);
+}
+
+ul.menu-links li:not(.active-link) a:hover {
+    color: var(--secondary-color);
+    background: var(--nav-background-color-hover);
 }
 
 /* GENERAL DESIGN */
@@ -192,15 +199,18 @@ div.layout-buttons ul {
     font-weight: bold;
 }
 
-.membership1, .membership2, .membership3 {
+.membership1, 
+.membership2, 
+.membership3 {
     border-radius: 0.5rem;
     padding: 0.5rem 1.5rem;
     align-self: center;
     justify-self: center;
+    text-shadow:  1px 1px 2px var(--primary-color);
 }
 
 .membership1 {
-    background-color: rgb(202, 248, 226);
+    background-color: var(--accent1-color);
 }
 
 .membership2 {
@@ -283,13 +293,17 @@ footer > div {
     margin: 0;
 }
 
+footer > div:nth-child(odd) {
+    width: 250px;
+}
+
 footer > div:nth-child(2) {
     width: 200px;
     display: flex;
 }
 
 footer p {
-    padding: 0.2rem;
+    width: 250px;
 }
 
 .not-found {
