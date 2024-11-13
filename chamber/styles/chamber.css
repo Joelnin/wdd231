@@ -303,7 +303,7 @@ footer > div:nth-child(2) {
 }
 
 footer p {
-    width: 250px;
+    padding: 0 0.2rem;
 }
 
 .not-found {

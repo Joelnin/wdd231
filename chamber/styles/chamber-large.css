@@ -21,12 +21,12 @@
         grid-template-columns: 1fr 1.5fr 90px;
     }
 
-    .list > .card img {
+    /* .list > .card img {
         display: block;
         height: 90px;
         width: 90px;
         border-radius: 50px;
-    }
+    } */
     
     .list > .card > div:first-child {
         width: 100%;
