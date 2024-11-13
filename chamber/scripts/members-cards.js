@@ -6,7 +6,7 @@ async function getMembersData() {
     try {
         const response = await fetch(url);
         const data = await response.json();
-        console.table(data.members); // temporary testing of data response
+        // console.table(data.members); // temporary testing of data response
         displayMembers(data.members);
     
     } catch (error) {
@@ -15,30 +15,46 @@ async function getMembersData() {
 }
     
 getMembersData();
+
+
+function createCardTemplate(member) {
+    let card = document.createElement('section'); // Card space
+
+    card.setAttribute('class', 'card'); // Class for each card
+
+    let commerceLogo = document.createElement('img'); // Logo for the commerce
     
-const displayMembers = (members) => {
-    members.forEach((member) => {
-        let card = document.createElement('section');
-        let div1 = document.createElement('div');
-        let commerceName = document.createElement('h2');
-        let div2 = document.createElement('div');
-        let commerceAddress = document.createElement('p');
-        let phone = document.createElement('p');
-        let webPage = document.createElement('p');
-        let webPageURL = document.createElement('a');
-        let membershipLevel = document.createElement('p');
-        let commerceLogo = document.createElement('img');
+    // Logo info
+    commerceLogo.setAttribute('src', `images/${member.logofile}`);
+    commerceLogo.setAttribute('alt', `${member.name} Logo`)
+    commerceLogo.setAttribute('loading', 'lazy');
+    commerceLogo.setAttribute('width', '300');
+    commerceLogo.setAttribute('height', '180');
+    
+    card.appendChild(commerceLogo); // Adding logo
+    
+    let commerceName = document.createElement('h2'); // Next is the name of the commerce
+    commerceName.textContent = member.name;
 
-        commerceName.textContent = `${member.name}`;
-        commerceAddress.textContent = `${member.address}`;
-        phone.textContent = `${member.phone}`;
+    card.appendChild(commerceName);
 
-        webPageURL.setAttribute('href', member.url);
-        webPageURL.textContent = 'Website';
+    let webPage = document.createElement('p'); // Next is the website
+    webPage.innerHTML = `<a href="${member.url}">Website</a>`;
 
-        webPage.appendChild(webPageURL);
+    card.appendChild(webPage);
 
-        let membership;
+    let commerceAddress = document.createElement('p'); // Next is the address
+    commerceAddress.textContent = member.address;
+
+    card.appendChild(commerceAddress);
+    
+    let phone = document.createElement('p'); // Next the Phone number
+    phone.textContent = `${member.phone}`;
+
+    card.appendChild(commerceAddress);
+
+    let membershipLevel = document.createElement('p'); // Last the membership with conditions
+    let membership;
 
         switch(member.level) {
 
@@ -55,28 +71,18 @@ const displayMembers = (members) => {
                 break;
         }
 
-        membershipLevel.innerHTML = `<b>Level</b> <br> ${membership}`;
+    membershipLevel.innerHTML = `<b>Level</b> <br> ${membership}`;
+    membershipLevel.setAttribute('class', 'membership')
 
-        membershipLevel.setAttribute('class', `membership${member.level}`)
+    card.appendChild(membershipLevel);
 
-        commerceLogo.setAttribute('src', `images/${member.logofile}`);
-        commerceLogo.setAttribute('alt', `${member.name} Logo`)
-        commerceLogo.setAttribute('loading', 'lazy');
-        commerceLogo.setAttribute('width', '300');
-        commerceLogo.setAttribute('height', '200');
+    return card;
+}
 
-        div1.appendChild(commerceLogo);
-        div1.appendChild(commerceName);
-        div1.appendChild(webPage);
+const displayMembers = (members) => {
+    members.forEach((member) => {
 
-        div2.appendChild(commerceAddress);
-        div2.appendChild(phone);
-
-        card.appendChild(div1);
-        card.appendChild(div2);
-        card.appendChild(membershipLevel);
-
-        card.setAttribute('class', 'card');
+        let card = createCardTemplate(member);
 
         cards.appendChild(card);
 
