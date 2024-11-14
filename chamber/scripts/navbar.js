@@ -1,5 +1,3 @@
-// Menu
-
 const hamButton = document.querySelector('#menu-button');
 const navigation = document.querySelector('#animate-menu');
 

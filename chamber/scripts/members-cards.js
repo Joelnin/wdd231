@@ -22,38 +22,50 @@ function createCardTemplate(member) {
 
     card.setAttribute('class', 'card'); // Class for each card
 
+    let ul = document.createElement('ul');
+
     let commerceLogo = document.createElement('img'); // Logo for the commerce
     
     // Logo info
     commerceLogo.setAttribute('src', `images/${member.logofile}`);
     commerceLogo.setAttribute('alt', `${member.name} Logo`)
-    commerceLogo.setAttribute('loading', 'lazy');
+
+    if (member.index < 1) { // First image auto for better performance
+        commerceLogo.setAttribute('loading', 'auto');
+    } else {
+        commerceLogo.setAttribute('loading', 'lazy');
+    }
+    
     commerceLogo.setAttribute('width', '300');
     commerceLogo.setAttribute('height', '180');
     
     card.appendChild(commerceLogo); // Adding logo
     
-    let commerceName = document.createElement('h2'); // Next is the name of the commerce
+    let commerceName = document.createElement('h3'); // Next is the name of the commerce
     commerceName.textContent = member.name;
 
     card.appendChild(commerceName);
 
-    let webPage = document.createElement('p'); // Next is the website
-    webPage.innerHTML = `<a href="${member.url}">Website</a>`;
+    let webPage = document.createElement('li'); // Next is the website
+    webPage.innerHTML = `<a href="${member.url}"><b>Website</b></a>`;
+    webPage.setAttribute('class', 'site');
 
-    card.appendChild(webPage);
+    ul.appendChild(webPage);
 
-    let commerceAddress = document.createElement('p'); // Next is the address
+    let commerceAddress = document.createElement('li'); // Next is the address
     commerceAddress.textContent = member.address;
 
-    card.appendChild(commerceAddress);
+    commerceAddress.setAttribute('class', 'address');
+
+    ul.appendChild(commerceAddress);
     
-    let phone = document.createElement('p'); // Next the Phone number
+    let phone = document.createElement('li'); // Next the Phone number
     phone.textContent = `${member.phone}`;
+    phone.setAttribute('class', 'phone');
 
-    card.appendChild(commerceAddress);
+    ul.appendChild(phone);
 
-    let membershipLevel = document.createElement('p'); // Last the membership with conditions
+    let membershipLevel = document.createElement('li'); // Last the membership with conditions
     let membership;
 
         switch(member.level) {
@@ -74,7 +86,9 @@ function createCardTemplate(member) {
     membershipLevel.innerHTML = `<b>Level</b> <br> ${membership}`;
     membershipLevel.setAttribute('class', 'membership')
 
-    card.appendChild(membershipLevel);
+    ul.appendChild(membershipLevel);
+
+    card.appendChild(ul);
 
     return card;
 }

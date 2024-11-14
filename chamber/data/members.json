@@ -1,46 +1,52 @@
 {
     "members": [
         {
+            "index": 0,
             "name": "Fresh Fish",
-            "address": "Cumaná, El Bosque Urbanization",
+            "address": "Cumaná, El Bosque Urb",
             "phone": "412-8639641",
             "url": "#",
             "logofile": "commercelogo1.webp",
             "level": 2
         },
         {
+            "index": 1,
             "name": "Innovadesing 3D",
-            "address": "Cumaná, La Cruz Street",
+            "address": "Cumaná, La Cruz St",
             "phone": "412-0858667",
             "url": "https://www.instagram.com/innovadesing3d?igsh=N2d2NHAxOHlwM2k2",
             "logofile": "commercelogo2.webp",
             "level": 1
         },
         {
+            "index": 2,
             "name": "Café Gourmet Cumaná",
-            "address": "Cumaná, Gutiérrez Street",
+            "address": "Cumaná, Gutiérrez St",
             "phone": "426-6208964",
             "url": "https://www.instagram.com/cafegourmetcumanaoficial?igsh=c3k0cHo2MjA4NzJ6",
             "logofile": "commercelogo3.webp",
             "level": 1
         },
         {
+            "index": 3,
             "name": "Nina's Cupcakes and Cakes",
-            "address": "Cumaná, Tres Picos Urbanization",
+            "address": "Cumaná, Tres Picos Urb",
             "phone": "414-9994608",
             "url": "https://www.instagram.com/ninas_marval?igsh=MTFsY2xmZnlsYTJzNw==",
             "logofile": "commercelogo4.webp",
             "level": 2
         },
         {
+            "index": 4,
             "name": "Dulcemente GICA",
-            "address": "Cumaná, Petión Street",
+            "address": "Cumaná, Petión St",
             "phone": "412-6949649",
             "url": "https://www.instagram.com/dulcementegica?igsh=dW81dXAya3dyNGN4",
             "logofile": "commercelogo5.webp",
             "level": 3
         },
         {
+            "index": 5,
             "name": "Ache Barber",
             "address": "Home Delivery",
             "phone": "424-8720650",
@@ -49,6 +55,7 @@
             "level": 1
         },
         {
+            "index": 6,
             "name": "A de Arte",
             "address": "Home Delivery",
             "phone": "424-8814288",

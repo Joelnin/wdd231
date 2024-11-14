@@ -4,9 +4,11 @@
         display: none;
     }
 
-    nav, nav.open {
+    nav, 
+    nav.open {
         grid-template-rows: 1fr;
         transition: none;
+        border-bottom: none;
     }
 
     ul.menu-links {
@@ -17,16 +19,8 @@
         flex: 1 1 100%;
     }
 
-    .list > .card {
-        grid-template-columns: 1fr 1.5fr 90px;
-    }
-    
-    .list > .card > div:first-child {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-items: center;
+    ul.menu-links li a {
+        border-bottom: 5px solid var(--accent2-color);
     }
 
     footer {
