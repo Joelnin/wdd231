@@ -29,7 +29,6 @@ body {
     font-family: var(--paragraph-font);
     max-width: var(--max-width);
     min-width: var(--min-width);
-    min-height: 120px;
 }
 
 header,

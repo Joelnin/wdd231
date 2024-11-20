@@ -50,47 +50,44 @@
     
     <main>
 
-        <div class="landing-page">
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 1000px)" srcset="images/hero-large.webp">
+                <source media="(min-width: 640px)" srcset="images/hero-medium.webp">
+                <img src="images/hero-small.webp" alt="Waves crashing on the shore" width="400" height="300">
+            </picture>
+            <a href="join.html">Join Us</a>
+        </div>
 
-            <div class="hero">
-                <picture>
-                    <source media="(min-width: 1000px)" srcset="images/hero-large.webp">
-                    <source media="(min-width: 640px)" srcset="images/hero-medium.webp">
-                    <img src="images/hero-small.webp" alt="Waves crashing on the shore" width="400" height="300">
-                </picture>
-                <a href="join.html">Join Us</a>
-            </div>
+        <h2>Home</h2>
 
-            <h2>Home</h2>
-
-            <div class="events-weather">
+        <div class="events-weather">
+            <div>
+                <h3>Events</h3>
                 <div>
-                    <h3>Events</h3>
-                    <div id="events">
-                        <p>There's no events planned right now. Come back and check later</p>
-                    </div>
-
-                </div>            
-
-                <div class="weater">
-                    <h3>Current Weather</h3>
-                    <div id="current-weather">
-                        <p>Not data available</p>
-                    </div>
+                    <p>There's no events planned yet. Please, come back later</p>
                 </div>
 
-                <div class="weater">
-                    <h3>Weather Cast</h3>
-                    <div id="weather-cast">
-                        <p>Not data available</p>
-                    </div>
+            </div>            
 
+            <div>
+                <h3>Current Weather</h3>
+                <div id="current-weather">
+                    <p>No data available</p>
                 </div>
             </div>
 
-            <div id="business-sum">
+            <div>
+                <h3>Weather Cast</h3>
+                <div id="weather-cast">
+                    <p>No data available</p>
+                </div>
 
             </div>
+        </div>
+
+        <div id="business-sum">
+
         </div>
 
     </main>
