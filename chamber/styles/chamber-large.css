@@ -1,5 +1,7 @@
 @media screen and (min-width: 640px) {
 
+    /* NAVEGATION */
+
     #menu-button {
         display: none;
     }
@@ -23,6 +25,8 @@
         border-bottom: 5px solid var(--accent2-color);
     }
 
+    /* FOOTER */
+
     footer {
         grid-template-rows: 1fr;
         grid-template-columns: 1fr 1fr 1fr;
@@ -31,5 +35,22 @@
     footer > div {
         margin: 0;
         width: auto;
+    }
+
+    /* HOME LAYOUT */
+
+    .events-weather {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        min-height: 12rem;
+    }
+
+    #business-sum {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #business-sum section {
+        margin: 10px;
     }
 }

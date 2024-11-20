@@ -27,6 +27,8 @@
     <script defer src="scripts/navbar.js"></script>
     <script defer src="scripts/footer.js"></script>
     <!-- Specific Scripts -->
+    <script defer src="scripts/member-sum.js"></script>
+    <script defer src="scripts/weather.js"></script>
 </head>
 <body>
     <header>
@@ -47,12 +49,49 @@
     </nav>
     
     <main>
-        <div class="hero">
 
+        <div class="landing-page">
+
+            <div class="hero">
+                <picture>
+                    <source media="(min-width: 1000px)" srcset="images/hero-large.webp">
+                    <source media="(min-width: 640px)" srcset="images/hero-medium.webp">
+                    <img src="images/hero-small.webp" alt="Waves crashing on the shore" width="400" height="300">
+                </picture>
+                <a href="join.html">Join Us</a>
+            </div>
+
+            <h2>Home</h2>
+
+            <div class="events-weather">
+                <div>
+                    <h3>Events</h3>
+                    <div id="events">
+                        <p>There's no events planned right now. Come back and check later</p>
+                    </div>
+
+                </div>            
+
+                <div class="weater">
+                    <h3>Current Weather</h3>
+                    <div id="current-weather">
+                        <p>Not data available</p>
+                    </div>
+                </div>
+
+                <div class="weater">
+                    <h3>Weather Cast</h3>
+                    <div id="weather-cast">
+                        <p>Not data available</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="business-sum">
+
+            </div>
         </div>
-        <h2>Home</h2>
-
-        <img src="images/404notfound.webp" alt="404 Not Found" class="not-found" width="300" height="200">
 
     </main>
     <footer>
