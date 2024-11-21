@@ -23,7 +23,7 @@ async function fetchFromApi() {
     try {
         const response = await fetch(urlWeather);
         const data = await response.json();
-        // console.table(data); // temporary testing of data response
+        console.table(data); // temporary testing of data response
         displayResults(data);
 
     } catch (error) {
@@ -44,8 +44,6 @@ function currentWeatherTemplate(data) {
     Sunrise Hour | X:XXam
     Sunset Hour  | X:XXpm (12h time)
     */
-
-    // Temperature (°F)
 
     let temperature = document.createElement('p');
     temperature.innerHTML = `<b>${data.list[0].main.temp.toFixed(0)}</b> °F`;
@@ -85,7 +83,7 @@ function getHours12hTime(time) {
     let hours = date.getHours();
     let minutes = date.getMinutes();
 
-    // Hours is in militar time, must convert to standar time
+    // Hours is in militar time, must convert to standard time
     if (hours > 12) {
         hours = hours - 12;
     }
@@ -108,16 +106,15 @@ function weatherCastTemplate(data) {
     let day = new Date();
 
     let weather1 = document.createElement('p');
-    weather1.innerHTML = `Today: <b>${data.list[0].main.temp.toFixed(0)}°F</b>`;
+    weather1.innerHTML = `Today: <b>${data.list[0].main.temp.toFixed(0)} °F</b>`;
     weatherCast.appendChild(weather1);
 
-
     let weather2 = document.createElement('p');
-    weather2.innerHTML = `${weekDays[day.getDay() + 1]}: <b>${data.list[8].main.temp.toFixed(0)}°F</b>`;
+    weather2.innerHTML = `${weekDays[day.getDay() + 1]}: <b>${data.list[8].main.temp.toFixed(0)} °F</b>`;
     weatherCast.appendChild(weather2);
 
     let weather3 = document.createElement('p');
-    weather3.innerHTML = `${weekDays[day.getDay() + 2]}: <b>${data.list[16].main.temp.toFixed(0)}°F</b>`;
+    weather3.innerHTML = `${weekDays[day.getDay() + 2]}: <b>${data.list[16].main.temp.toFixed(0)} °F</b>`;
     weatherCast.appendChild(weather3);
 }
 
