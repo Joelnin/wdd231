@@ -123,7 +123,8 @@ ul.menu-links li a {
     background: var(--nav-background-color);
 }
 
-ul.menu-links li.active-link a {
+ul.menu-links li.active-link a,
+.hero a:hover {
     color: var(--secondary-color);
     background-color: var(--accent2-color);
 }
@@ -264,6 +265,10 @@ main > h2 {
     border: 3px solid var(--accent1-color);
 }
 
+/* .hero a:hover {
+    background-color: var(--accent2-color);
+    color: var(--secondary-color);
+} */
 
 /* DIRECTORY STYLE */
 
