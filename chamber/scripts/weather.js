@@ -23,7 +23,7 @@ async function fetchFromApi() {
     try {
         const response = await fetch(urlWeather);
         const data = await response.json();
-        console.table(data); // temporary testing of data response
+        // console.table(data); // temporary testing of data response
         displayResults(data);
 
     } catch (error) {
