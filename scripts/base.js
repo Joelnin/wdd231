@@ -85,7 +85,7 @@ const courses = [
             'CSS',
             'JavaScript'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'WDD',
@@ -116,6 +116,10 @@ function createNameTags(courses) {
         if (course.completed) {
             nameTag.classList.add('class', 'completed');
         }
+
+        nameTag.addEventListener ("click", () => {
+            displayCourseDetails(course);
+        });
 
         subjects.appendChild(nameTag);
     });
@@ -166,3 +170,52 @@ wddFilter.addEventListener('click', () => {
     createNameTags(coursesDisplay);
     getCreditsRequired(coursesDisplay);
 });
+
+const courseDetails = document.querySelector("#course-details");
+
+function displayCourseDetails(course) {
+    courseDetails.innerHTML = "";
+
+    let button = document.createElement('button')
+
+    button.setAttribute('id', 'closeModal');
+    button.textContent = "❌";
+
+    let subtitle = document.createElement('h3');
+
+    subtitle.textContent = `${course.subject} ${course.number.toString()}`;
+
+    let title = document.createElement('h2');
+
+    title.textContent = course.title;
+
+    let credits = document.createElement('p');
+
+    credits.innerHTML = `<strong>Credits</strong>: ${course.credits}`;
+
+    let certificate = document.createElement('p');
+
+    certificate.innerHTML = `<strong>Certificate</strong>: ${course.certificate}`
+
+    let description = document.createElement('p');
+
+    description.textContent = course.description;
+
+    let technologies = document.createElement('p');
+
+    technologies.innerHTML = `<strong>Technologies</strong>: ${course.technology.join(', ')}`;
+
+    courseDetails.appendChild(button);
+    courseDetails.appendChild(title);
+    courseDetails.appendChild(subtitle);
+    courseDetails.appendChild(credits);
+    courseDetails.appendChild(certificate);
+    courseDetails.appendChild(description);
+    courseDetails.appendChild(technologies);
+
+    courseDetails.showModal();
+
+    closeModal.addEventListener("click", () => {
+        courseDetails.close();
+    });
+}

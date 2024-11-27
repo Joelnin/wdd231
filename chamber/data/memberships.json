@@ -1,0 +1,39 @@
+{
+    "memberships": [
+        {
+            "type": "non profit",
+            "benefits": [
+                "Basic access to events organized by the organization.",
+                "Inclusion in a general member directory (no priority).",
+                "Opportunity to connect with other members through an internal network."
+            ],
+            "price": "free"
+        },
+        {
+            "type": "bronze",
+            "benefits": [
+                "All benefits from the Non-Profit level.",
+                "Access to free exclusive events, such as talks or webinars."
+            ],
+            "price": "6$/year"
+        },
+        {
+            "type": "silver",
+            "benefits": [
+                "All benefits from the previous levels.",
+                "Access to specialized training sessions.",
+                "Priority access to networking opportunities.",
+                "Monthly spotlight feature on the homepage of the website."
+            ],
+            "price": "12$/year"
+        },
+        {
+            "type": "golden",
+            "benefits": [
+                "All benefits from the previous levels.",
+                "Exclusive advertising opportunities on the organization’s channels."
+            ],
+            "price": "24$/year"
+        }
+    ]
+}

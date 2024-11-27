@@ -265,11 +265,6 @@ main > h2 {
     border: 3px solid var(--accent1-color);
 }
 
-/* .hero a:hover {
-    background-color: var(--accent2-color);
-    color: var(--secondary-color);
-} */
-
 /* DIRECTORY STYLE */
 
 .layout-buttons {
@@ -404,5 +399,226 @@ li.membership {
     font-weight: lighter;
     font-style: italic;
     width: 51px;
+}
+
+/* JOIN STYLE */
+
+/* a. Form Style */
+
+.join-page {
+    padding: 1rem;
+}
+
+.join-page h3 {
+    font-size: 1.1rem;
+    color: var(--nav-background-color);
+    text-align: center;
+    border-bottom: 1px solid var(--accent1-color);
+    margin: 0;
+}
+
+.join-form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 2%;
+    background-color: var(--card-background-color);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.join-form form {
+    margin: 0;
+}
+
+.join-form fieldset {
+    border: none;
+    padding: 0;
+    margin: 0.6rem;
+}
+
+.join-form legend,
+.join-form p {
+    margin: auto 0 0;
+    font-size: 0.8rem;
+    padding-top: 0.2rem;
+    font-weight: bold;
+}
+
+.join-form b {
+    color: red;
+}
+
+.join-form input[type=text],
+.join-form input[type=tel],
+.join-form input[type=date],
+.join-form input[type=email],
+.join-form textarea,
+.join-form select {
+    padding: 0.3rem;
+    font-size: 1rem;
+    width: 100%;
+    contain: content;
+    background-color: var(--primary-color);
+    border-style: none;
+    border: 2px solid var(--secondary-color);
+}
+
+.join-form label {
+    display: block;
+    font-size: .8rem;
+    color: var(--nav-background-color);
+    padding: 0.2rem;
+}
+
+.join-form input:required {
+    border-left: 3px solid red;
+}
+
+.join-form input:focus {
+    border-left-color: var(--accent1-color); 
+    outline: 2px solid var(--accent1-color);
+}
+
+.join-form input:required:valid {
+    border-left: 3px solid green;
+}
+
+.join-form input[type=submit] {
+    border: 1px solid black;
+    text-align: center;
+    color: white;
+    background-color: var(--nav-background-color);
+    padding: 0.75rem 1.5rem;
+    margin: 1rem 0;
+    font-size: 1.2rem;
+    animation: shape_change 3s infinite alternate linear;
+    cursor: pointer;
+}
+
+@keyframes shape_change {
+	0% {
+        border-radius: 2rem;
+    }
+    100% {
+        border-radius: 0;
+    }
+}
+
+/* b. Thank you Page */
+
+.thanks {
+    text-align: center;
+    font-size: 1rem;
+    padding: 0 1rem;
+}
+
+#results {
+    background-color: var(--card-background-color);
+    padding: 1rem;
+    margin: 1rem;
+    border: 3px solid var(--nav-background-color);
+    border-radius: 1rem;
+}
+
+#results p:not(:first-child) {
+    margin-top: 0.5rem;
+}
+
+/* c. Membership levels */
+
+#membership-levels {    
+    margin: 1rem 2%;
+    padding: 1rem;
+}
+
+#membership-levels > aside {
+    border: 2px solid var(--nav-background-color);
+    border-radius: 1rem;
+    padding: 1rem;
+    background-color: var(--card-background-color);
+    text-align: center;
+    margin: 1rem;
+    animation: slidein 3s;
+}
+
+@keyframes slidein {
+    0% {
+        opacity: 0%;
+        margin-top: 3rem;
+        background-color: var(--accent1-color);
+    }
+    100% {
+        opacity: 100%;
+        margin-top: 1rem;
+        background-color: var(--card-background-color);
+    }
+}
+
+#membership-levels > aside > h4 {
+    margin-bottom: 0.5rem;
+    text-shadow:  1px 1px 2px var(--primary-color);
+}
+
+#membership-levels > aside > button {
+    background-color: var(--nav-background-color);
+    color: var(--primary-color);
+    text-shadow:  1px 1px 2px var(--secondary-color);
+    border: 2px solid var(--accent1-color);
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+/* d. Dialog */
+
+#levelModal {
+    position: relative;
+    top: 2rem;
+    border: 2px double var(--nav-background-color);
+    border-radius: 8px;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    box-shadow: 0 0 2rem var(--accent1-color);
+    width: 90%;
+    max-width: 600px;
+}
+
+::backdrop {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+  
+#levelModal h4 {
+    font-size: 1.1rem;
+    padding: 0.2rem;
+    margin: 0;
+}
+
+#levelModal li {
+    font-size: 1rem;
+    padding: 0.1rem 0;
+    list-style: disc;
+    margin-left: 2rem;
+}
+
+#levelModal p {
+    background-color: var(--card-background-color);
+    padding: 0.5rem;
+    width: 200px;
+    text-align: center;
+}
+
+#levelModal button {
+    background-color: var(--accent1-color);
+    position: absolute;
+    top: 1px;
+    right: 2px;
+    height: 44px;
+    width: 44px;
+    font-size: 1.5rem;
+    padding: 0.2rem;
+    border: 1px solid var(--nav-background-color);
+    border-radius: 1rem;
+    cursor: pointer;
 }
 

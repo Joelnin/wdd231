@@ -53,4 +53,15 @@
     #business-sum section {
         margin: 10px;
     }
+
+    /* JOIN STYLE */
+
+    .join-page {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+
+
 }

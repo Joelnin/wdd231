@@ -27,6 +27,7 @@
     <script defer src="scripts/navbar.js"></script>
     <script defer src="scripts/footer.js"></script>
     <!-- Specific Scripts -->
+    <script defer src="scripts/memership-levels.js"></script>
 </head>
 <body>
     <header>
@@ -47,13 +48,115 @@
     </nav>
 
     <main>
-        <div class="hero">
-
-        </div>
         <h2>Join</h2>
 
-        <img src="images/404notfound.webp" alt="404 Not Found" class="not-found" width="300" height="200">
+        <div class="join-page">
+            <section class="join-form">
+                <h3>Membership Application Form</h3>
+                <form method="GET" action="thankyou.html">
+                    <!-- First Name -->
+                    <fieldset>
+                        <legend>First Name <b>*</b></legend>
 
+                        <label for="first">
+                            <input type="text" id="first" name="first" required autocomplete="given-name" title="Your First Name">
+                        </label>
+                    </fieldset>
+
+                    <!-- Last Name -->
+                    <fieldset>
+                        <legend>Last Name <b>*</b></legend>
+                    
+                        <label for="last"> 
+                            <input type="text" id="last" name="last" required autocomplete="family-name" title="Your Last Name">
+                        </label>
+                    </fieldset>
+
+                    <!-- Organizational Name -->
+                    <fieldset>
+                        <legend>Organizational Title</legend>
+
+                        <label for="organizationtitle"> 
+                            <input type="text" id="organizationtitle" name="organizationtitle" autocomplete="organization" title="Only letters, hyphens, and spaces are allowed. Minimum 7 characters." pattern="^[A-Za-z\s\-]{7,}$">
+                        </label>
+                    </fieldset>
+
+                    <!-- Email -->
+                    <fieldset>
+                        <legend>Email Address <b>*</b></legend>
+
+                        <label for="email">
+                            <input type="email" id="email" name="email" required placeholder="someone@example.com"  title="Your Email" autocomplete="email">
+                        </label>
+                    </fieldset>
+
+                    <!-- Cell Phone -->
+                    <fieldset>
+                        <legend>Cell Phone <b>*</b></legend>
+
+                        <label for="phone">
+                            <input type="tel" id="phone" name="phone"  required autocomplete="tel" pattern="^\d{3}-\d{7}$" title="A Phone Number with dashes (412-0001234)" placeholder="412-0001234">
+                        </label>
+                    </fieldset>
+
+                    <!-- Organization Name -->
+                    <fieldset>
+                        <legend>Organization's Name <b>*</b></legend>
+                    
+                        <label for="organization">
+                            <input type="text" id="organization" name="organization" required  title="Your organization's name" autocomplete="organization">
+                        </label>
+                    </fieldset>
+
+                    <!-- Membership Level -->
+                    <fieldset>
+                        <legend>Membership Level <b>*</b></legend>
+
+                        <label for="non-profit-membership">
+                            <input type="radio" id="non-profit-membership" name="level" value="non-profit"> Non Profit Membership
+                        </label>
+        
+                        <label for="bronze-membership">
+                            <input type="radio" id="bronze-membership" name="level" value="bronze" checked> Bronze Membership
+                        </label>
+
+                        <label for="silver-membership">
+                            <input type="radio" id="silver-membership" name="level" value="silver"> Silver Membership
+                        </label>
+                        
+                        <label for="gold-membership">
+                            <input type="radio" id="gold-membership" name="level" value="gold"> Gold Membership
+                        </label>
+                    </fieldset>
+                    
+                    <!-- Bussines Description -->
+                     <fieldset>
+                        <legend>Business Decription</legend>
+
+                        <label for="description">
+                            <textarea id="description" name="description" placeholder="Write here" rows="5"></textarea>
+                        </label>
+                     </fieldset>
+                    
+                    <p>(<b>*</b>) Required field</p>
+
+                    <!-- Timestamp -->
+                    <input type="hidden" name="hiddendate" id="today">
+
+                    <!-- Submit -->
+                    <input type="submit" value="Apply for a Membership">
+                </form>
+            </section>
+            
+            <section id="membership-levels">
+                <h3>Membership Levels</h3>
+
+            </section>
+
+            <dialog id="levelModal">
+            </dialog>
+            
+        </div>
     </main>
     <footer>
         <div>
