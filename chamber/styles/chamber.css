@@ -8,7 +8,7 @@
     --nav-background-color: rgb(10, 11, 100);
     --nav-background-color-hover: rgb(121, 187, 137);
 
-    --card-background-color: rgb(191, 200, 244, 0.2);
+    --card-background-color: rgb(242, 244, 253);
 
     --paragraph-font: 'Roboto', serif;
 
@@ -410,6 +410,7 @@ li.membership {
 }
 
 .join-page h3 {
+    text-shadow:  1px 1px 2px var(--primary-color);
     font-size: 1.1rem;
     color: var(--nav-background-color);
     text-align: center;
@@ -444,8 +445,9 @@ li.membership {
     font-weight: bold;
 }
 
-.join-form b {
-    color: red;
+.join-form strong {
+    text-shadow:  0 0 1px red;
+    color: var(--nav-background-color);
 }
 
 .join-form input[type=text],
