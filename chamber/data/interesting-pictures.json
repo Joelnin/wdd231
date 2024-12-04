@@ -1,0 +1,60 @@
+{
+    "pictures": [
+        {
+            "index": 0,
+            "img": {
+                "imagefile": "borbollon-san-antonio.webp",
+                "alt": "Borbollón of San Antonio - San Antonio del Golfo, Sucre"
+            },
+            "caption": "Borbollón of San Antonio Del Golfo, Sucre"
+        },
+        {
+            "index": 1,
+            "img": {
+                "imagefile": "iglesia-cariaco.webp",
+                "alt": "Iglesia San Felipe de Austria - Cariaco, Sucre"
+            },
+            "caption": "Iglesia San Felipe de Austria, Sucre"
+        },
+        {
+            "index": 2,
+            "img": {
+                "imagefile": "mochima.webp",
+                "alt": "Mochima Beach, Sucre"
+            },
+            "caption": "Mochima Beach, Sucre"
+        },
+        {
+            "index": 3,
+            "img": {
+                "imagefile": "araguaney-carrizal.webp",
+                "alt": "Araguaney - Carrizal de la Cruz, Cariaco, Sucre"
+            },
+            "caption": "Carrizal de la Cruz, Cariaco, Sucre"
+        },
+        {
+            "index": 4,
+            "img": {
+                "imagefile": "san-juan-bautista.webp",
+                "alt": "Aguas de San Juan Bautista - Aguas Calientes, Sucre"
+            },
+            "caption": "Aguas de San Juan Bautista, Sucre"
+        },
+        {
+            "index": 5,
+            "img": {
+                "imagefile": "sunset-san-antonio.webp",
+                "alt": "Sunset at San Antonio del Golfo - Sucre"
+            },
+            "caption": "Sunset at San Antonio del Golfo, Sucre"
+        },
+        {
+            "index": 6,
+            "img": {
+                "imagefile": "guayacan.webp",
+                "alt": "Guayacan de las Flores Beach - Sucre"
+            },
+            "caption": "Guayacan de las Flores Beach, Sucre"
+        }
+    ]
+}

@@ -624,3 +624,40 @@ li.membership {
     cursor: pointer;
 }
 
+#interesting {
+    min-height: 100px;
+}
+
+.join-page > div > div {
+    padding: 1rem;
+    max-width: 25rem;
+    border: 2px solid var(--accent1-color);
+    border-radius: 1rem;
+    margin: 1rem;
+    background-color: var(--primary-color);
+}
+
+.join-page > div > div > p,
+.join-page > div > div li,
+.join-page figure:not(:first-child) {
+    margin-top: 0.5rem;
+}
+
+.join-page figure {
+    text-align: center;
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+    border: 4px solid var(--accent1-color);
+    border-top: 0.4rem solid var(--nav-background-color);
+    border-bottom: 0.4rem solid var(--nav-background-color);
+}
+
+.join-page figure > img {
+    width: 100%;
+    opacity: 75%;
+}
+
+.join-page figure > img:hover {
+    opacity: 100%;
+}
