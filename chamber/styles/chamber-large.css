@@ -61,7 +61,13 @@
         grid-template-columns: 1fr 1fr;
     }
 
-
+    .join-page figure > img {
+        opacity: 75%;
+    }
+    
+    .join-page figure > img:hover {
+        opacity: 100%;
+    }
 
 
 }

@@ -655,9 +655,4 @@ li.membership {
 
 .join-page figure > img {
     width: 100%;
-    opacity: 75%;
-}
-
-.join-page figure > img:hover {
-    opacity: 100%;
 }
