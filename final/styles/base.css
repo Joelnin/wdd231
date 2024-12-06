@@ -105,13 +105,8 @@ h2 {
     justify-items: center;
 }
 
+.mobile-wireframe,
 .desktop-wireframe {
-    box-sizing: content-box;
-    width: 100%;
-    object-fit: contain;
-}
-
-.mobile-wireframe {
     box-sizing: content-box;
     max-width: 320px;
     width: 100%;
