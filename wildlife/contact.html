@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Discover the Wild | Contact Us</title>
+    <meta name="description" content="Contact us! You can send us a message or subscribe to our daily newspaper.">
+    <meta name="author" content="Joelnin Rodriguez">
+
+    <!-- Facebook Open Graph tags -->
+    <meta property="og:title" content="Discover the Wild">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://joelnin.github.io/wdd231/wildlife/images/img-url.webp">
+    <meta property="og:url" content="https://joelnin.github.io/wdd231/wildlife">
+
+    <!-- Style tags -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Syne:wght@400..800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/base-large.css">
+
+    <link rel="icon" href="favicon.ico">
+
+    <script src="scripts/main.js" type="module"></script>
+     
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.webp" alt="Discover the Wild logo" width="45" height="40">
+        <h2>Discover<br>the Wild</h2>
+        <button type="button" id="menu-button" aria-label="Menu button"> </button>
+    </header>
+    <nav id="animate-menu">
+        <ul class="menu-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="explore.html">Explore</a></li>
+            <li class="active-link"><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+
+        <div class="hero">
+            <h1>Discover the Wild</h1>
+            <a href="explore.html">Let's do it!</a>
+        </div>
+
+        <div class="forms">
+
+            <section class="contact-form">
+                <h2>Contact us</h2>
+
+                <form method="GET" action="thankyou.html">
+
+                    <fieldset>
+                        <legend>Send us a Message</legend>
+
+                        <!-- Name -->
+                        <label for="username">Name: 
+                            <input type="text" id="username" name="username" autocomplete="name" placeholder="Jhon Doe" title="Only letters, hyphens, and spaces are allowed. Minimum 3 characters." pattern="^[A-Za-z\s\-]{3,}$">
+                        </label>
+
+                        <!-- Email -->
+                        <label for="conemail">Email: 
+                            <input type="email" id="conemail" name="conemail" placeholder="someone@example.com" title="Your Email" autocomplete="email">
+                        </label>
+
+                        <!-- Purpose of contact -->
+                        <p>Please, select the purpose of your contact: <strong>*</strong></p>
+
+                        <label for="general-inquiry">General Inquiry 
+                            <input type="radio" id="general-inquiry" name="purpose" value="General Inquiry" checked>
+                        </label>
+
+                        <label for="website-suggestion">Website Suggestion 
+                            <input type="radio" id="website-suggestion" name="purpose" value="Website Suggestion">
+                        </label>
+
+                        <!-- Message -->
+                        <p>Tell us, what can we do for you? <strong>*</strong></p>
+                        <label for="message">
+                            <textarea name="message" id="message" rows="5" placeholder="Write your message here." required></textarea>
+                        </label>
+
+                        <p>(<strong>*</strong>) Required field</p>
+                        
+                        <!-- Timestamp -->
+                        <input type="hidden" name="hiddendate" id="today">
+
+                        <!-- Submit -->
+                        <input type="submit" value="Send message">
+                    </fieldset>
+                </form>
+            </section>
+
+            <section id="subscribe-section" class="newspaper">
+                <form id="newspaper-form" class="newspaper-form">
+                    <h2>Subscribe to our Newspaper</h2>
+                    <label for="subsname">Name: 
+                        <input type="text" id="subsname" name="subsname" placeholder="Jane Austen" title="Your Name">
+                    </label>
+                    
+                    <label for="subsemail">Email: <strong>*</strong>
+                        <input type="email" id="subsemail" name="subsemail" placeholder="someone@email.com" required title="Your Email" autocomplete="email">
+                    </label>
+
+                    <label for="checkbox">
+                        <input type="checkbox" id="checkbox" name="checkbox" value="yes" required> Subscribe to <b>Daily Newspaper</b>. <strong>*</strong>
+                    </label>
+
+                    <p>(<strong>*</strong>) Required field</p>
+
+                    <input type="submit" value="Submit Subscription">
+                </form>
+            </section>
+
+            <section id="newspaper-thanks" class="newspaper not-reveal">
+                <h2>Thank you for subscribing to our newspaper!</h2>   
+            </section>
+
+        </div>
+
+    </main>
+    
+    <footer>
+        <div>
+            <p><b>Discover the Wild</b></p>
+            <p>Cumaná</p>
+            <p>Campeche, 6101</p>
+            <p>+58 (293) 000-4321</p>
+        </div>
+        <ul class="social">
+            <li><a href="#"><img src="images/facebook.svg" alt="Facebook" width="40" height="40"></a></li>
+            <li><a href="#"><img src="images/x-social.svg" alt="X Twitter" width="40" height="40"></a></li>
+            <li><a href="#"><img src="images/instagram.svg" alt="Instagram" width="40" height="40"></a></li>
+        </ul>
+        <div>
+            <p>WDD231 Final Project</p>
+            <p>Joelnin Rodriguez</p>
+            <p>
+                © <span id="currentyear"></span> Discover the Wild
+            </p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+</html>

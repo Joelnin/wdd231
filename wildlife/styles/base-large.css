@@ -1,0 +1,69 @@
+@media screen and (min-width: 640px) {
+
+    .hero {
+        background: linear-gradient(
+                rgba(0, 0, 0, 0.8),  /* Upper Color */
+                rgba(0, 0, 0, 0.3),
+                rgba(0, 0, 0, 0)   /* Down Color */
+            ),
+            url('../images/hero-large.webp') no-repeat center center;
+    }
+
+    .hero a:hover {
+        background-color: var(--accent2-color);
+        color: var(--primary-color);
+        font-weight: bold;
+
+    }
+
+    /* NAVEGATION */
+
+    #menu-button {
+        display: none;
+    }
+
+    nav, 
+    nav.open {
+        grid-template-rows: 1fr;
+        transition: none;
+        border-bottom: none;
+    }
+
+    ul.menu-links {
+        display: flex;
+    }
+
+    ul.menu-links li {
+        flex: 1 1 100%;
+    }
+
+    ul.menu-links li a {
+        border-bottom: 5px solid var(--accent2-color);
+    }
+
+    /* FOOTER */
+
+    footer {
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    footer > div {
+        margin: 0;
+        width: auto;
+    }
+
+    /* CONTACT US STYLE */
+
+    .forms {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .newspaper {
+        justify-self: center;
+        align-self: center;
+        min-width: 250px;
+    }
+
+}
