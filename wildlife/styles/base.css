@@ -93,7 +93,7 @@ nav {
     display: grid;
     grid-template-rows: 0fr;
     transition: grid-template-rows 0.5s ease-out;
-    border-bottom: 5px solid var(--accent1-color);
+    /* border-bottom: 5px solid var(--accent1-color); */
     background-color: var(--accent2-color);
 }
 
@@ -127,7 +127,8 @@ ul.menu-links li a {
 }
 
 ul.menu-links li.active-link a {
-    color: var(--primary-color);
+    font-weight: bolder;
+    color: rgb(106, 50, 5);
     border-bottom: 4px solid var(--accent1-color);
 }
 
