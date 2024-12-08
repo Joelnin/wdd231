@@ -9,7 +9,8 @@
             url('../images/hero-large.webp') no-repeat center center;
     }
 
-    .hero a:hover {
+    .hero a:hover,
+    #news-container a:hover {
         background-color: var(--accent2-color);
         color: var(--primary-color);
         font-weight: bold;
@@ -65,4 +66,26 @@
         min-width: 250px;
     }
 
+    /* NEWS STYLE */
+
+    .layout-buttons {
+        display: flex;
+        width: 300px;
+        font-size: 1rem;
+        margin-top: 1rem;
+    }
+    
+    .layout-buttons li {    
+        cursor: pointer;
+        padding: 0.5rem 1.5rem;
+        color: var(--secondary-color);
+        font-size: 1rem;
+        border-radius: 1rem;
+        border: 2px solid var(--accent1-color);
+    }
+    
+    .layout-buttons li.active-layout {
+        background-color: var(--accent2-color);
+        box-shadow:  1px 1px 1px var(--secondary-color);
+    }
 }

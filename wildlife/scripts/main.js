@@ -9,12 +9,20 @@ import { formSubmit } from './subscribe-form-handler.js';
 import { hiddenDate } from './getdate.js';
 import { displayData } from './contact-form-handler.js';
 
+// News Scripts
+
+import { getNewsArticles, getNewsSummary } from './getnews.js';
+import { changeDisplay } from './buttons-display.js';
+
 document.addEventListener('DOMContentLoaded', () => {
     initNavbar();
     initFooter();
     formSubmit();
     hiddenDate();
     displayData();
+    getNewsArticles();
+    getNewsSummary();
+    changeDisplay();
 });
 
 
