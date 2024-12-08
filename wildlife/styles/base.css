@@ -197,6 +197,12 @@ footer > .social {
     border: 3px solid var(--primary-color);
 }
 
+main > h2 {
+    font-size: 2rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+
 /* CONTACT US STYLE */
 
 /* a. Form Style */
