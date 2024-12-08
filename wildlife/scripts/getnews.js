@@ -52,28 +52,28 @@ function createArticleTemplate(article) {
     
     let card = document.createElement('article');
 
-    // let divImg = document.createElement('div');
-    // divImg.setAttribute('class', 'art-img')
+    let divImg = document.createElement('div');
+    divImg.setAttribute('class', 'art-img')
 
-    // if (article.urlToImage) {
-    //     let img = document.createElement('img');
+    if (article.urlToImage) {
+        let img = document.createElement('img');
 
-    //     img.setAttribute('src',`${article.urlToImage}`);
-    //     img.setAttribute('alt',`${article.title} Image`);
-    //     img.setAttribute('height', '300');
-    //     img.setAttribute('width', '300');
-    //     img.setAttribute('loading', 'lazy');
+        img.setAttribute('src',`images/${article.urlToImage}`);
+        img.setAttribute('alt',`${article.title} Image`);
+        img.setAttribute('height', '300');
+        img.setAttribute('width', '300');
+        img.setAttribute('loading', 'lazy');
 
-    //     divImg.appendChild(img);
-    // }
+        divImg.appendChild(img);
+    }
 
-    // let divInfo = document.createElement('div');
-    // divInfo.setAttribute('class', 'art-info')
+    let divInfo = document.createElement('div');
+    divInfo.setAttribute('class', 'art-info')
 
     let title = document.createElement('h3');
     title.textContent = article.title;
-    // divInfo.appendChild(title);
-    card.appendChild(title);
+    divInfo.appendChild(title);
+    // card.appendChild(title);
 
     let description = document.createElement('p');
 
@@ -85,26 +85,26 @@ function createArticleTemplate(article) {
         description.textContent = "There's no description available.";
     }
 
-    // divInfo.appendChild(description);
-    card.appendChild(description);
+    divInfo.appendChild(description);
+    // card.appendChild(description);
 
     let source = document.createElement('p');
 
     source.textContent = `Source: ${article.source.name}`;
-    // divInfo.appendChild(source);
-    card.appendChild(source);
+    divInfo.appendChild(source);
+    // card.appendChild(source);
 
     let sourceURL = document.createElement('a');
 
     sourceURL.setAttribute('href', `${article.url}`);
     sourceURL.setAttribute('target', '_blank');
     sourceURL.textContent = "Read Article";
-    // divInfo.appendChild(sourceURL);
-    card.appendChild(sourceURL);
+    divInfo.appendChild(sourceURL);
+    // card.appendChild(sourceURL);
 
 
-    // card.appendChild(divImg);
-    // card.appendChild(divInfo);
+    card.appendChild(divImg);
+    card.appendChild(divInfo);
 
     return card;
 }

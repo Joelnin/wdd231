@@ -31,8 +31,9 @@ body {
 
 header,
 footer {
-    color: var(--secondary-color);
+    color: var(--accent2-color);
     background-color: var(--primary-color);
+    text-shadow: 1px 1px 2px var(--secondary-color);
 }
 
 p,
@@ -58,9 +59,6 @@ header {
     grid-template-columns: 60px auto 44px;
     align-items: center;
     padding: 1rem;
-    text-shadow: 1px 1px 2px var(--secondary-color);
-    background-color: var(--primary-color);
-    color: var(--accent2-color);
 }
 
 header > img {
@@ -147,6 +145,9 @@ footer {
     row-gap: 1rem;
     padding: 1rem;
     justify-content: left;
+}
+
+footer > p > a {
     color: var(--accent2-color);
 }
 
@@ -374,17 +375,25 @@ main > h2 {
     display: none;
 }
 
-/* .news-container img {
+.news-container img {
     width: 10.5rem;
     height: 10rem;
     object-fit: cover;
     overflow: hidden;
     box-shadow: 0px 0px 2px var(--accent1-color);
     border-radius: 0.5rem;
-} */
+} 
 
-/* .news-container .art-info {
+.news-container .art-info {
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    padding: 1rem;
-    text-align: left;
-} */
+    padding: 0 1rem;
+}
+
+footer a:link,
+footer a {
+    color: var(--accent2-color);
+    font-weight: bold;
+    cursor: pointer;
+}

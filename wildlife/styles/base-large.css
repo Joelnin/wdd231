@@ -85,7 +85,15 @@
     }
     
     .layout-buttons li.active-layout {
-        background-color: var(--accent2-color);
+        background-color: var(--primary-color);
+        color: var(--accent2-color);
         box-shadow:  1px 1px 1px var(--secondary-color);
     }
+
+    .news-container.list > article {
+        display: grid;
+        grid-template-columns: 11rem 1fr;
+    }
+
+
 }
