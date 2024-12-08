@@ -12,7 +12,7 @@ export async function getNewsArticles() { // For News Page
         try {
             const response = await fetch(url);
             const data = await response.json();
-            // console.table(data.articles); // temporary testing of data response
+            console.table(data.articles); // temporary testing of data response
             display15News(data.articles);
 
         } catch (error) {
