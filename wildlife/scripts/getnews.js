@@ -1,5 +1,4 @@
-const apiKey = '4420a91724cd40b2adc26392b53f2238';
-const url = `https://newsapi.org/v2/everything?q=endangered+animals OR climate+change+-trump+-government&language=en&sortBy=relevancy&excludeDomains=yahoo.com&apiKey=${apiKey}`;
+const url = './data/news.json';
 
 const newsContainer = document.querySelector('#news-container');
 const newsResume = document.querySelector('#news-summary');
