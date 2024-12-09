@@ -1,6 +1,7 @@
 // General Scripts
 import { initNavbar } from './navbar.js';
 import { initFooter } from './footer.js';
+import { toTop } from './to-top.js';
 
 // Contact us Scripts
 
@@ -17,17 +18,26 @@ import { changeDisplay } from './change-display.js';
 // Explore Scripts
 
 import { getAllAnimalsSum } from './getanimals.js';
+import { setSearchBar } from './getanimals.js';
+
 
 document.addEventListener('DOMContentLoaded', () => {
     initNavbar();
     initFooter();
+    toTop('#to-top');
+    
     formSubmit();
     hiddenDate();
     displayData();
+    
     getNewsArticles();
     getNewsSummary();
     changeDisplay();
+
     getAllAnimalsSum();
+    setSearchBar();
+    
+
 
 });
 

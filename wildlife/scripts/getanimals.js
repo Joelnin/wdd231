@@ -2,8 +2,10 @@ const apiKey = 'b/HsPxzC6d/nQjQijbvvJw==SMa0npBggCcaYMXG';
 const apiUrl = 'https://api.api-ninjas.com/v1/animals?name=';
 
 const animalsContainer = document.querySelector('#animals-container');
+let displayedAnimals = [];
 
 export async function getAllAnimalsSum() {
+    displayedAnimals = [];
 
     if (animalsContainer) {
     
@@ -78,10 +80,11 @@ function createAnimalSumTemplate(animal) {
     return card;
 }
 
+
 function displayAnimalsSum(animals) {
 
     animals.forEach(element => {
-        
+        displayedAnimals.push(element);
         let card = createAnimalSumTemplate(element);
         animalsContainer.appendChild(card);
     });
@@ -201,9 +204,6 @@ function createDialogTemplate(animal) {
 
     card.appendChild(divInfo);
 
-
-
-
     let button = document.createElement('button');
     button.setAttribute('class', 'close-dialog');
     button.textContent = "✖";
@@ -215,4 +215,56 @@ function createDialogTemplate(animal) {
     card.appendChild(button);
     
     return card;
+}
+
+const searchBar = document.querySelector('#animal-search');
+const suggestionsContainer = document.querySelector('#suggestions-container');
+
+// Set a search bar for the animals
+export function setSearchBar() {
+
+    if (animalsContainer) {
+
+        searchBar.addEventListener('input', () => {
+
+    const query = searchBar.value.toLowerCase();
+
+    if (query) {
+        // Filtering shown animals
+        const suggestions = displayedAnimals.filter(animal =>
+
+            animal.name.toLowerCase().includes(query)
+        
+        ).slice(0, 4); // Show just 4 matching names
+
+        // Empty the suggestions
+        suggestionsContainer.innerHTML = '';
+
+
+        suggestions.forEach(animal => {
+            const suggestion = document.createElement('div');
+            suggestion.className = 'suggestion';
+            suggestion.textContent = animal.name;
+
+            // Click on a suggestion
+            suggestion.addEventListener('click', () => {
+                const card = Array.from(animalsContainer.children).find(
+                card => card.querySelector('h3').textContent === animal.name
+                );
+
+                if (card) {
+                    card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    searchBar.value = ''; // Empty the search bar
+                    suggestionsContainer.innerHTML = ''; // Empty the suggestions container
+                }
+            });
+
+            suggestionsContainer.appendChild(suggestion);
+        });
+        
+    } else {
+        suggestionsContainer.innerHTML = ''; // Empty the suggestions if there's no match
+    }
+});
+    }
 }

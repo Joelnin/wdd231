@@ -45,7 +45,23 @@
     </nav>
     
     <main>
+
+        <button class="to-top not-reveal" id="to-top">&#9650;</button>
+
+        <div class="hero">
+            <h1>Discover the Wild</h1>
+            <a href="explore.html">Let's do it!</a>
+        </div>
+
         <h2>Explore</h2>
+
+        <div class="search-bar">
+            <label for="animal-search"> Do you want to search for a specific animal?
+                <input type="text" id="animal-search"
+              placeholder="Example: Zebra"/>
+            </label>
+            <div id="suggestions-container"></div>
+        </div>
 
         <div id="animals-container" class="news-container grid">
             <p>Loading animals...</p>

@@ -40,7 +40,8 @@ p,
 li,
 a,
 span,
-label {
+label,
+button {
     font-family: var(--paragraph-font);
 }
 
@@ -130,7 +131,8 @@ ul.menu-links li.active-link a {
     border-bottom: 4px solid var(--accent1-color);
 }
 
-ul.menu-links li a:hover {
+ul.menu-links li a:hover,
+.suggestion:hover {
     color: var(--secondary-color);
     background: var(--nav-background-color);
 }
@@ -254,6 +256,7 @@ main > h2 {
 }
 
 .forms input[type=text],
+div.search-bar input[type=text],
 .contact-form input[type=date],
 .forms input[type=email],
 .forms textarea,
@@ -497,4 +500,51 @@ footer a {
     border: 1px solid var(--accent1-color);
     border-radius: 1rem;
     cursor: pointer;
+}
+
+div.search-bar {
+    width: 300px;
+    justify-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    border-radius: 1rem;
+    margin: 1rem auto;
+}
+
+#suggestions-container {
+    color: var(--primary-color);
+    border: 1px solid var(--accent1-color);
+    background-color: var(--accent2-color);
+    max-height: 200px;
+    overflow-y: auto;
+    position: absolute;
+    width: 200px;
+}
+
+.suggestion {
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* To top button */
+
+.to-top {
+    border: 2px solid var(--accent1-color);
+    background-color: var(--accent2-color);
+    border-radius: 1.5rem;
+    cursor: pointer;
+    position: fixed; 
+    right: 1rem;
+    padding: 0.5rem 1rem 1rem;
+    bottom: 1rem;
+    font-size: 2rem;
+    align-content: center;
+    z-index: 9999;
+}
+
+.to-top:hover {
+    background-color: var(--nav-link-color);
 }
