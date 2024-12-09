@@ -4,6 +4,7 @@
 
     --accent1-color: rgb(168, 238, 4);
     --accent2-color: rgb(249, 249, 249);
+    --accent3-color: rgba(4, 134, 71, 0.303);
 
     --nav-background-color: rgb(196, 254, 211);
     --nav-background-color-hover: rgb(150, 185, 159);
@@ -80,7 +81,7 @@ header h2 {
 	font-size: 2rem;
 	border: none;
 	background: var(--primary-color);
-    color: var(--secondary-color);
+    color: var(--accent2-color);
     cursor: pointer;
     text-align: center;
     padding: 0.25rem 2vw;
@@ -390,12 +391,13 @@ div.search-bar input[type=text],
 }
 
 .news-container a,
-.news-container button {
+.news-container button,
+.news-sum a {
     cursor: pointer;
     color: var(--accent2-color);
     text-align: center;
     background-color: var(--primary-color);
-    margin: 0.5rem auto;
+    margin: 0.5rem 0;
     padding: 0.3rem 0.8rem;
     border-radius: 0.5rem;
     border: 2px solid var(--primary-color);
@@ -405,7 +407,8 @@ div.search-bar input[type=text],
     display: none;
 }
 
-.news-container img {
+.news-container img,
+.endangered-dialog img {
     width: 10.5rem;
     height: 10rem;
     object-fit: cover;
@@ -421,7 +424,7 @@ div.search-bar input[type=text],
     padding: 0 1rem;
 }
 
-footer a:link,
+a:link,
 footer a {
     color: var(--accent2-color);
     font-weight: bold;
@@ -549,4 +552,42 @@ div.search-bar {
 #to-top:hover {
     background-color: var(--accent2-color);
     color: var(--primary-color);
+}
+
+/* HOME STLE */
+
+#news-summary,
+#endangered {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.news-sum {
+    /* border-top: 3px solid var(--accent1-color); */
+    background: linear-gradient(
+        var(--primary-color),/* Upper Color */
+        var(--accent3-color),
+        rgba(0, 0, 0, 0)   /* Down Color */
+    );
+    
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+}
+
+.news-sum > h3 {
+    font-size: 1.8rem;
+    text-shadow: 1px 1px 2px var(--secondary-color);
+    color: var(--accent2-color);
+}
+
+#endangered {
+    min-height: 150px;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0),/* Upper Color */
+        var(--accent3-color),
+        var(--primary-color)   /* Down Color */
+    );
+    padding-bottom: 2rem;
 }

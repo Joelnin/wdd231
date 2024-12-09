@@ -52,8 +52,57 @@
             <a href="explore.html">Let's do it!</a>
         </div>
 
-        <h2>Home</h2>
+        <h2>Animals</h2>
 
+        <div>
+
+            <h3>Top 3 Endangered Animals Choice</h3>
+
+            <div id="endangered" class="news-container grid">
+                <p>Loading animals...</p>
+            </div>
+        </div>
+
+        <div class="news-sum">
+
+            <h3>News</h3>
+
+            <div id="news-summary" class="news-container grid">
+                <p>Loading news...</p>
+            </div>
+
+            <a href="news.html">View All News</a>
+        </div>
+
+        <div class="forms">
+            <section id="subscribe-section" class="newspaper">
+                <form id="newspaper-form" class="newspaper-form">
+                    <h2>Subscribe to our Newspaper</h2>
+                    <label for="subsname">Name: 
+                        <input type="text" id="subsname" name="subsname" placeholder="Jane Austen" title="Your Name">
+                    </label>
+                    
+                    <label for="subsemail">Email: <strong>*</strong>
+                        <input type="email" id="subsemail" name="subsemail" placeholder="someone@email.com" required title="Your Email" autocomplete="email">
+                    </label>
+
+                    <label for="checkbox">
+                        <input type="checkbox" id="checkbox" name="checkbox" value="yes" required> Subscribe to <b>Daily Newspaper</b>. <strong>*</strong>
+                    </label>
+
+                    <p>(<strong>*</strong>) Required field</p>
+
+                    <input type="submit" value="Submit Subscription">
+                </form>
+            </section>
+            
+            <section id="newspaper-thanks" class="newspaper not-reveal">
+                <h2>Thank you for subscribing to our newspaper!</h2>   
+            </section>
+        </div>
+
+        <dialog id="animal-dialog" class="endangered-dialog">
+        </dialog>
     </main>
     
     <footer>

@@ -1,0 +1,104 @@
+{
+    "endangered": [
+    {
+        "name": "Amur Leopard",
+        "picture": "amur-leopard.webp",
+        "taxonomy": {
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Carnivora",
+            "family": "Felidae",
+            "genus": "Panthera",
+            "scientific_name": "Panthera pardus orientalis"
+        },
+        "locations": [
+            "Asia",
+            "Eurasia"
+        ],
+        "characteristics": {
+            "prey": "Deer, Cattle, hares, small mammals",
+            "estimated_population_size": "103 as of 2018",
+            "biggest_threat": "Poaching and habitat loss",
+            "gestation_period": "90-105 days",
+            "habitat": "Forests",
+            "predators": "Human poaching and competition with Siberian tigers",
+            "diet": "Carnivore",
+            "average_litter_size": "2-3 cubs",
+            "lifestyle": "Solitary",
+            "common_name": "Amur leopard",
+            "location": "Russia's Far East",
+            "slogan": "The Amur leopard may be the rarest big cat on Earth!",
+            "group": "Mammal",
+            "skin_type": "Hair",
+            "lifespan": "10 - 15 years in wild; up to 20 in captivity",
+            "weight": "25kg - 48kg (55lbs - 106lbs)",
+            "length": "90 cm - 180 cm (3ft - 6ft) excluding tail"
+        }
+    },
+    {
+        "name": "Sumatran Tiger",
+        "picture": "sumatran-tiger.webp",
+        "taxonomy": {
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Carnivora",
+            "family": "Felidae",
+            "genus": "Panthera",
+            "scientific_name": "Panthera Tigris Sumatrae"
+        },
+        "locations": [
+            "Asia"
+        ],
+        "characteristics": {
+            "main_prey": "Deer, Cattle, Wild Boar",
+            "habitat": "Dense tropical forest",
+            "predators": "Human",
+            "diet": "Carnivore",
+            "average_litter_size": "3",
+            "lifestyle": "Solitary",
+            "favorite_food": "Deer",
+            "type": "Mammal",
+            "slogan": "The smallest species of tiger!",
+            "color": "BlackWhiteOrange",
+            "skin_type": "Fur",
+            "top_speed": "60 mph",
+            "lifespan": "18 - 25 years",
+            "weight": "80kg - 150kg (176lbs - 330lbs)"
+        }
+    },
+    {
+        "name": "Mountain Gorilla",
+        "picture": "mountain-gorilla.webp",
+        "taxonomy": {
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Primates",
+            "family": "Hominidae",
+            "genus": "Gorilla",
+            "scientific_name": "Gorilla Berengei Berengei"
+        },
+        "locations": [
+            "Africa"
+        ],
+        "characteristics": {
+            "main_prey": "Leaves, Seeds, Herbs",
+            "habitat": "Tropical forest and jungles in mountainous regions",
+            "predators": "Human, Leopard",
+            "diet": "Omnivore",
+            "average_litter_size": "1",
+            "lifestyle": "Social",
+            "favorite_food": "Leaves",
+            "type": "Mammal",
+            "slogan": "Isolated populations found in the mountains!",
+            "color": "BrownGreyBlack",
+            "skin_type": "Hair",
+            "top_speed": "25 mph",
+            "lifespan": "35-50 years",
+            "weight": "204-227kg (450-500lbs)"
+        }
+      }
+    ]
+}

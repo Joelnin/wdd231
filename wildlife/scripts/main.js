@@ -12,13 +12,17 @@ import { displayData } from './contact-form-handler.js';
 
 // News Scripts
 
-import { getNewsArticles , getNewsSummary } from './getnews.js';
+import { getNewsArticles } from './getnewsall.js';
 import { changeDisplay } from './change-display.js';
 
 // Explore Scripts
 
-import { getAllAnimalsSum } from './getanimals.js';
-import { setSearchBar } from './getanimals.js';
+import { getAllAnimalsSum, setSearchBar } from './getanimals.js';
+
+// Home Scripts
+
+import { getNewsSummary } from './getnewssum.js';
+import { getEndangeredAnimals } from './getendangereds.js';
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -31,12 +35,13 @@ document.addEventListener('DOMContentLoaded', () => {
     displayData();
     
     getNewsArticles();
-    getNewsSummary();
     changeDisplay();
 
     getAllAnimalsSum();
     setSearchBar();
-    
+
+    getNewsSummary();
+    getEndangeredAnimals();
 
 
 });

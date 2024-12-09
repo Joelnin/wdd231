@@ -88,4 +88,35 @@
         border-left: 5px solid var(--accent1-color);;
         margin-left: 1rem;
     }
+
+    /* HOME STYLE */
+
+    #news-summary,
+    #endangered {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        min-height: 200px;
+    }
+
+    #news-summary article,
+    #endangered > div {
+        margin: 0.1rem;
+        border-radius: 0;
+    }
+
+    #news-summary h3 {
+        font-size: 1rem;
+    }
+
+}
+
+
+@media screen and (min-width: 720px) {
+
+    #news-summary article,
+    #endangered > div {
+        margin: 1rem;
+        border-radius: 0.8rem;
+    }
+
 }
