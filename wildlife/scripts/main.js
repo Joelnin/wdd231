@@ -11,8 +11,12 @@ import { displayData } from './contact-form-handler.js';
 
 // News Scripts
 
-import { getNewsArticles, getNewsSummary } from './getnews.js';
-import { changeDisplay } from './buttons-display.js';
+import { getNewsArticles , getNewsSummary } from './getnews.js';
+import { changeDisplay } from './change-display.js';
+
+// Explore Scripts
+
+import { getAllAnimalsSum } from './getanimals.js';
 
 document.addEventListener('DOMContentLoaded', () => {
     initNavbar();
@@ -23,6 +27,8 @@ document.addEventListener('DOMContentLoaded', () => {
     getNewsArticles();
     getNewsSummary();
     changeDisplay();
+    getAllAnimalsSum();
+
 });
 
 

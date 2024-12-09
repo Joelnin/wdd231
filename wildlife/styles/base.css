@@ -329,6 +329,30 @@ main > h2 {
     border-radius: 1rem;
 }
 
+/* EXPLORE STYLE */
+
+.layout-buttons {
+    display: flex;
+    width: 300px;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.layout-buttons li {    
+    cursor: pointer;
+    padding: 0.5rem 1.5rem;
+    color: var(--secondary-color);
+    font-size: 1rem;
+    border-radius: 1rem;
+    border: 2px solid var(--accent1-color);
+}
+
+.layout-buttons li.active-layout {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    box-shadow:  1px 1px 1px var(--secondary-color);
+}
+
 /* NEWS STYLES */
 
 .news-container.grid {
@@ -337,7 +361,8 @@ main > h2 {
     min-height: 600px;
 }
 
-.news-container > article {
+.news-container > article,
+.news-container > div {
     display: flex;
     flex-direction: column;
     background-color: var(--accent2-color);
@@ -347,7 +372,8 @@ main > h2 {
     margin: 1rem;
 }
 
-.news-container article h3 {
+.news-container h3,
+#animal-dialog h3 {
     margin-bottom: 1rem;
     padding-bottom: 0.5rem;
     font-size: 1.2rem;
@@ -360,7 +386,8 @@ main > h2 {
     margin: 0.2rem 0;
 }
 
-.news-container a {
+.news-container a,
+.news-container button {
     cursor: pointer;
     color: var(--accent2-color);
     text-align: center;
@@ -371,7 +398,7 @@ main > h2 {
     border: 2px solid var(--primary-color);
 }
 
-.layout-buttons {
+.layout-buttons.news-layout {
     display: none;
 }
 
@@ -395,5 +422,79 @@ footer a:link,
 footer a {
     color: var(--accent2-color);
     font-weight: bold;
+    cursor: pointer;
+}
+
+/* Dialog Style */
+
+/* d. Dialog */
+
+#animal-dialog {
+    position: relative;
+    top: 2rem;
+    border: 2px double var(--nav-background-color);
+    border-radius: 8px;
+    padding: 1rem;
+    background-color: var(--accent2-color);
+    box-shadow: 0 0 2rem var(--primary-color);
+    width: 90%;
+    max-width: 600px;
+}
+
+#animal-dialog > div {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+}
+
+
+::backdrop {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+#animal-dialog p:first-of-type {
+    width: 100%;
+    text-align: center;
+}
+  
+#animal-dialog h4 {
+    text-align: center;
+    font-size: 1.1rem;
+    padding: 0.2rem;
+    margin: 0;
+}
+
+#animal-dialog li {
+    font-size: 1rem;
+    padding: 0.1rem 0;
+    list-style: disc;
+    margin-left: 2rem;
+}
+
+#animal-dialog p {
+    background-color: var(--card-background-color);
+    padding: 0.2rem;
+    width: 200px;
+    text-align: center;
+}
+
+#animal-dialog div.animal-behavior {
+    border-top: 5px solid var(--accent1-color);
+    padding-top: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+#animal-dialog button {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    position: absolute;
+    top: 1px;
+    right: 2px;
+    height: 44px;
+    width: 44px;
+    font-size: 1.5rem;
+    padding: 0.2rem;
+    border: 1px solid var(--accent1-color);
+    border-radius: 1rem;
     cursor: pointer;
 }
