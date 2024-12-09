@@ -531,9 +531,10 @@ div.search-bar {
 
 /* To top button */
 
-.to-top {
+#to-top {
     border: 2px solid var(--accent1-color);
-    background-color: var(--accent2-color);
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
     border-radius: 1.5rem;
     cursor: pointer;
     position: fixed; 
@@ -545,6 +546,7 @@ div.search-bar {
     z-index: 9999;
 }
 
-.to-top:hover {
-    background-color: var(--nav-link-color);
+#to-top:hover {
+    background-color: var(--accent2-color);
+    color: var(--primary-color);
 }
