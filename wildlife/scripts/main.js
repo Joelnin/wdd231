@@ -23,6 +23,7 @@ import { getAllAnimalsSum, setSearchBar } from './getanimals.js';
 
 import { getNewsSummary } from './getnewssum.js';
 import { getEndangeredAnimals } from './getendangereds.js';
+import { getVisitMessage } from './message.js';
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -42,6 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     getNewsSummary();
     getEndangeredAnimals();
+    getVisitMessage();
 
 
 });

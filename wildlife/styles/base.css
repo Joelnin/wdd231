@@ -425,7 +425,8 @@ div.search-bar input[type=text],
 }
 
 a:link,
-footer a {
+footer a,
+.resources a {
     color: var(--accent2-color);
     font-weight: bold;
     cursor: pointer;
@@ -564,16 +565,16 @@ div.search-bar {
 }
 
 .news-sum {
-    /* border-top: 3px solid var(--accent1-color); */
+    border-bottom: 6px solid var(--accent1-color);
     background: linear-gradient(
         var(--primary-color),/* Upper Color */
         var(--accent3-color),
         rgba(0, 0, 0, 0)   /* Down Color */
     );
-    
     display: flex;
     flex-direction: column;
     padding-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .news-sum > h3 {
@@ -590,4 +591,27 @@ div.search-bar {
         var(--primary-color)   /* Down Color */
     );
     padding-bottom: 2rem;
+}
+
+.endan-sum > h3 {
+    text-align: center;
+}
+
+.hero > div {
+    position: absolute;
+    text-align: center;
+    font-size: 1rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: var(--accent2-color);
+    top: 12rem;
+    padding: 0.5rem 2rem;
+    right: 8vw;
+    /* border-radius: 2rem; */
+    border: 3px solid var(--primary-color);
+}
+
+.resources > ul {
+    margin: 1rem;
+    padding: 1rem;
+    background-color: var(--primary-color);
 }

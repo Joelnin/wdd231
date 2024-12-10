@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Discover the Wild | Home</title>
-    <meta name="description" content="Here you'll find news about climate change, endangered animals, and some interesting topics around animals.">
+    <title>Discover the Wild | Attributions</title>
+    <meta name="description" content="Resource attributions page for pictures and information not from a free bank or API.">
     <meta name="author" content="Joelnin Rodriguez">
 
     <!-- Facebook Open Graph tags -->
@@ -37,7 +37,7 @@
     <nav id="animate-menu">
         <ul class="menu-links">
             <li><a href="index.html">Home</a></li>
-            <li class="active-link"><a href="news.html">News</a></li>
+            <li><a href="news.html">News</a></li>
             <li><a href="explore.html">Explore</a></li>
             <li><a href="contact.html">Contact Us</a></li>
         </ul>
@@ -45,24 +45,23 @@
     
     <main>
 
-        <button class="to-top not-reveal" id="to-top">&#9650;</button>
+        <div class="thankyou resources">
 
-        <div class="hero">
-            <h1>Discover the Wild</h1>
-            <a href="explore.html">Let's do it!</a>
+            <h2>Images Taken from</h2>
+
+            <ul>
+                <li><a href="https://www.ifaw.org/animals/amur-leopard" target="_blank">Amur leopard</a></li>
+                <li><a href="https://thezoosociety.org/product/sumatran-tiger/" target="_blank">Sumatran tiger</a></li>
+                <li><a href="https://rhinos.org/about-rhinos/rhino-species/javan-rhino/" target="_blank">Javan Rhinoceros</a></li>
+            </ul>
+
+            <h2>Articles and articles' pictures</h2>
+
+            <ul>
+                <li><a href="https://newsapi.org/" target="_blank">News API</a></li>
+            </ul>
+
         </div>
-
-        <h2>News</h2>
-
-        <ul class="layout-buttons news-layout">
-            <li id="grid-layout" class="active-layout"><b>Grid</b></li>
-            <li id="list-layout"><b>List</b></li>
-        </ul>    
-
-        <div id="news-container" class="news-container grid">
-            <p>Loading news...</p>
-        </div>
-
     </main>
     
     <footer>
@@ -79,7 +78,7 @@
         </ul>
         <div>
             <p>WDD231 Final Project</p>
-            <p><a href="resources.html">Attributions Page</a></p>
+            <p><a href="#">Attributions Page</a></p>
             <p>Joelnin Rodriguez</p>
             <p>
                 © <span id="currentyear"></span> Discover the Wild
