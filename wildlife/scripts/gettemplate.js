@@ -277,10 +277,11 @@ export function createInfoTemplate(info) {
         div.appendChild(userName);
     }
 
-    let email = document.createElement('p');
-    email.textContent = `Email: ${info.conemail.replace("%40","@")}`;
-    div.appendChild(email);
-
+    if (info.conemail) {
+        let email = document.createElement('p');
+        email.textContent = `Email: ${info.conemail.replace("%40","@")}`;
+        div.appendChild(email);
+    }
 
     let purpose = document.createElement('p');
     purpose.textContent = `Purpose: ${capitalize(info.purpose.replace("+"," "))}`;
