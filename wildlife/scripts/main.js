@@ -24,6 +24,7 @@ import { getAllAnimalsSum, setSearchBar } from './getanimals.js';
 import { getNewsSummary } from './getnewssum.js';
 import { getEndangeredAnimals } from './getendangereds.js';
 import { getVisitMessage } from './message.js';
+import { getFacts } from './getfact.js';
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -44,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
     getNewsSummary();
     getEndangeredAnimals();
     getVisitMessage();
-
+    getFacts();
 
 });
 

@@ -615,3 +615,21 @@ div.search-bar {
     padding: 1rem;
     background-color: var(--primary-color);
 }
+
+.interesting-facts {
+    background-color: var(--accent2-color);
+    padding: 2rem;
+    align-self: center;
+    justify-self: center;
+    box-shadow: 0 0 10px var(--accent1-color);
+    text-align: center;
+}
+
+.interesting-facts > h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.interesting-facts span {
+    font-size: 1.3rem;
+}
