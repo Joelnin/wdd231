@@ -1,4 +1,4 @@
-import { capitalize } from './grammar.js';
+import { capitalize, decodeSpecialChars } from './grammar.js';
 
 export function createArticleTemplate(article) {
 
@@ -272,7 +272,7 @@ export function createInfoTemplate(info) {
 
     if (info.username) {
         let userName = document.createElement('p');
-        userName.textContent = `Hello, ${capitalize(info.username)}`;
+        userName.textContent = `Hello, ${capitalize(info.username.replace("+"," "))}`;
 
         div.appendChild(userName);
     }
@@ -287,7 +287,7 @@ export function createInfoTemplate(info) {
     div.appendChild(purpose);
 
     let message = document.createElement('p');
-    message.textContent = `Your message: ${info.message.replaceAll("+"," ")}`;
+    message.textContent = `Your message: ${decodeSpecialChars(info.message.replaceAll("+"," "))}`;
     div.appendChild(message);
 
     let date = document.createElement('p');

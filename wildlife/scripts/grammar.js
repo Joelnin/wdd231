@@ -7,3 +7,13 @@ export function capitalize(phrase) {
 
     return words.join(" ");
 }
+
+export function decodeSpecialChars(encodedString) {
+
+    try {
+        return decodeURIComponent(encodedString);
+    } catch (error) {
+        console.error("Error decoding string:", error);
+        return encodedString; // Return original string if there's an error
+    }
+}
