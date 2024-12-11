@@ -10,7 +10,7 @@ export function getVisitMessage() {
         if (visitTime == null) {
 
             visitFeedback.textContent = "Welcome! Let's learn about animals together";
-            // localStorage.setItem("firstvisit", Date.now());
+            localStorage.setItem("firstvisit", Date.now());
 
         } else {
 
@@ -24,12 +24,10 @@ export function getVisitMessage() {
 
             } else {
 
-                visitFeedback.textContent = `Your last visit was ${Math.floor(timeDifference)} days ago. Welcome back`;
+                visitFeedback.textContent = `Your first visit was ${Math.floor(timeDifference)} days ago. Welcome back`;
 
             }
         }
-
-        localStorage.setItem("firstvisit", Date.now());
     }
 }
 
