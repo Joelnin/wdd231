@@ -4,7 +4,8 @@ export function getVisitMessage() {
 
     if (visitFeedback) {
 
-        let visitTime = localStorage.getItem("firstvisit");
+        let firstTime = localStorage.getItem("firstvisit");
+        let visitTime = localStorage.getItem("lastvisit");
     // console.log(visitTime);
 
         if (visitTime == null) {
@@ -24,10 +25,12 @@ export function getVisitMessage() {
 
             } else {
 
-                visitFeedback.textContent = `Your first visit was ${Math.floor(timeDifference)} days ago. Welcome back`;
+                visitFeedback.textContent = `Your last visit was ${Math.floor(timeDifference)} days ago. Welcome back`;
 
             }
         }
+
+        localStorage.setItem("lastvisit", Date.now());
     }
 }
 
