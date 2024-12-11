@@ -67,16 +67,18 @@
 
                         <!-- Name -->
                         <label for="username">Name: 
-                            <input type="text" id="username" name="username" autocomplete="name" placeholder="Jhon Doe" title="Only letters, hyphens, and spaces are allowed. Minimum 3 characters." pattern="^[A-Za-z\s\-]{3,}$">
+                            <input type="text" id="username" name="username" autocomplete="name" placeholder="Jhon Doe" title="Only letters, hyphens, and spaces are allowed. Minimum 3 characters" pattern="^[A-Za-z\s\-]{3,}$">
                         </label>
 
                         <!-- Email -->
                         <label for="conemail">Email: 
                             <input type="email" id="conemail" name="conemail" placeholder="someone@example.com" title="Your Email" autocomplete="email">
                         </label>
+                    </fieldset>
 
-                        <!-- Purpose of contact -->
-                        <p>Please, select the purpose of your contact: <strong>*</strong></p>
+                    <!-- Purpose of contact -->
+                    <fieldset>
+                        <legend>Please, select the purpose of your contact: <strong>*</strong></legend>
 
                         <label for="general-inquiry">General Inquiry 
                             <input type="radio" id="general-inquiry" name="purpose" value="General Inquiry" checked>
@@ -85,21 +87,25 @@
                         <label for="website-suggestion">Website Suggestion 
                             <input type="radio" id="website-suggestion" name="purpose" value="Website Suggestion">
                         </label>
+                    </fieldset>
 
-                        <!-- Message -->
-                        <p>Tell us, what can we do for you? <strong>*</strong></p>
+                    <!-- Message -->
+                    <fieldset>
+                        <legend>Tell us, what can we do for you? <strong>*</strong></legend>
+
                         <label for="message">
                             <textarea name="message" id="message" rows="5" placeholder="Write your message here." required></textarea>
                         </label>
-
-                        <p>(<strong>*</strong>) Required field</p>
-                        
-                        <!-- Timestamp -->
-                        <input type="hidden" name="hiddendate" id="today">
-
-                        <!-- Submit -->
-                        <input type="submit" value="Send message">
                     </fieldset>
+
+                    <p>(<strong>*</strong>) Required field</p>
+                    
+                    <!-- Timestamp -->
+                    <input type="hidden" name="hiddendate" id="today">
+
+                    <!-- Submit -->
+                    <input type="submit" value="Send message">
+                    
                 </form>
             </section>
 
